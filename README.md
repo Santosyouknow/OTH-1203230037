@@ -7,52 +7,52 @@ SOAL LATIHAN ASD - STRUCT DAN STACK
 
 1. ASISTEN HERLOCK HOLMES
 SOURCE CODE :
-
-    #include <stdio.h>
-    #include <stdlib.h>
-    
-    // Definisikan struktur node
-    struct Node {
-        char alphabet;
-        struct Node* link;
-    };
-    
-    int main() {
-        // Inisialisasi semua node
-        struct Node l1, l2, l3, l4, l5, l6, l7, l8, l9;
-        // Mengisi data pada setiap node
-        l1.link = NULL;
-        l1.alphabet = 'F';
-        l2.link = NULL;
-        l2.alphabet = 'M';
-        l3.link = NULL;
-        l3.alphabet = 'A';
-        l4.link = NULL;
-        l4.alphabet = 'I';
-        l5.link = NULL;
-        l5.alphabet = 'K';
-        l6.link = NULL;
-        l6.alphabet = 'T';
-        l7.link = &l4; // Menghubungkan l7 (N) ke l4 (I)
-        l7.alphabet = 'N';
-        l8.link = &l3; // Menghubungkan l8 (O) ke l3 (A)
-        l8.alphabet = 'O';
-        l9.link = &l8; // Menghubungkan l9 (R) ke l8 (O)
-        l9.alphabet = 'R';
-    
-        // Starting point
-        struct Node* current = &l3;
-    
-        // Traversal dari starting point hingga mencapai akhir
-        while (current != NULL) {
-            printf("%c", current->alphabet);
-            current = current->link;
-        }
-    
-        printf("\n");
-    
-        return 0;
-    }
+                    
+                        #include <stdio.h>
+                        #include <stdlib.h>
+                        
+                        // Definisikan struktur node
+                        struct Node {
+                            char alphabet;
+                            struct Node* link;
+                        };
+                        
+                           int main() {
+                            // Inisialisasi semua node
+                            struct Node l1, l2, l3, l4, l5, l6, l7, l8, l9;
+                            // Mengisi data pada setiap node
+                            l1.link = NULL;
+                            l1.alphabet = 'F';
+                            l2.link = NULL;
+                            l2.alphabet = 'M';
+                            l3.link = NULL;
+                            l3.alphabet = 'A';
+                            l4.link = NULL;
+                            l4.alphabet = 'I';
+                            l5.link = NULL;
+                            l5.alphabet = 'K';
+                            l6.link = NULL;
+                            l6.alphabet = 'T';
+                            l7.link = &l4; // Menghubungkan l7 (N) ke l4 (I)
+                            l7.alphabet = 'N';
+                            l8.link = &l3; // Menghubungkan l8 (O) ke l3 (A)
+                            l8.alphabet = 'O';
+                            l9.link = &l8; // Menghubungkan l9 (R) ke l8 (O)
+                            l9.alphabet = 'R';
+                        
+                            // Starting point
+                            struct Node* current = &l3;
+                        
+                            // Traversal dari starting point hingga mencapai akhir
+                            while (current != NULL) {
+                                printf("%c", current->alphabet);
+                                current = current->link;
+                            }
+                        
+                            printf("\n");
+                        
+                            return 0;
+                        }
 
    OUTPUT :
 
